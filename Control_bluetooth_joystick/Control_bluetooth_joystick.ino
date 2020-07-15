@@ -60,6 +60,18 @@ void loop()
   {
     BT.write('5');
   }
+  else if(!digitalRead(btn_a))
+  {
+    BT.write('b');//modo bluetooth
+  }
+  else if(!digitalRead(btn_b))
+  {
+    BT.write('c');//modo evasor
+  }
+  else if(!digitalRead(btn_c))
+  {
+    BT.write('a');//modo seguidor
+  }
   
   else
   {
